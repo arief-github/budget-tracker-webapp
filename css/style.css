@@ -1,0 +1,111 @@
+/* budget tracker styling */
+.budget-tracker {
+	border-collapse: collapse;
+	min-width: 750px;
+}
+
+.budget-tracker * {
+	font-family: sans-serif;
+}
+
+.budget-tracker th {
+	text-align: left;
+	padding: 10px 20px;
+	border-bottom: 2px solid #009578;
+}
+
+.budget-tracker td {
+	padding: 5px;
+}
+/* end budget tracker styling */
+
+.input,
+.delete-entry {
+	height: 30px;
+	font-size: 13px;
+	padding: 0 10px;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.input {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	outline: none;
+}
+
+.input:focus {
+	border-color: #bbb;
+}
+
+.delete-entry {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	background: none;
+	color: red;
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
+}
+
+.delete-entry:hover {
+	background: rgba(255, 0, 0, 0.1);
+}
+
+.controls,
+.summary {
+	text-align: right;
+}
+
+/* CSS */
+.btn-entry {
+	background-color: #36a9ae;
+	background-image: linear-gradient(#37adb2, #329ca0);
+	border: 1px solid #2a8387;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+	color: #ffffff;
+	cursor: pointer;
+	display: block;
+	font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue",
+		Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 11px 15px 12px;
+	text-align: center;
+	transition: box-shadow 0.05s ease-in-out, opacity 0.05s ease-in-out;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 15%;
+}
+
+.btn-entry:hover {
+	box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset,
+		rgba(0, 0, 0, 0.4) 0 1px 2px;
+	text-decoration: none;
+	transition-duration: 0.15s, 0.15s;
+}
+
+.btn-entry:active {
+	box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset,
+		rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.btn-entry:disabled {
+	cursor: not-allowed;
+	opacity: 0.6;
+}
+
+.btn-entry:disabled:active {
+	pointer-events: none;
+}
+
+.btn-entry:disabled:hover {
+	box-shadow: none;
+}
